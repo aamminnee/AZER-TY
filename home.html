@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- // meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZER TY - Accueil</title>
+    
+    <!-- // google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- // font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- // custom css -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+    <!-- // loader -->
+    <div id="loader">
+        <div class="text-center">
+            <span class="font-mono" style="font-size: 1.5rem; font-weight: bold; color: var(--heading); letter-spacing: 2px;">&lt;AZER TY/&gt;</span>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- // backgrounds -->
+    <div id="particles-js"></div>
+    <div class="bg-grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- // navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="home.html" class="nav-logo">
+                <img src="Images/logo.png" alt="AZER TY Logo">
+            </a>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link active">Accueil</a>
+                <a href="about.html" class="nav-link">A propos</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="collaborons.html" class="btn btn-primary btn-small">Collaborons</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- // hero section -->
+    <section id="accueil" class="home-section">
+        <div class="container">
+            <div class="tag font-mono reveal">
+                <span class="pulse-dot"></span>
+                Architecture Web & Systèmes Complexes
+            </div>
+
+            <h1 class="title-large reveal delay-100">
+                L'art du code<br>
+                <span class="text-gradient">Haute Performance.</span>
+            </h1>
+
+            <p class="home-text reveal delay-200">
+                AZER TY conçoit des plateformes digitales sur-mesure. Nous supprimons le superflu pour ne garder que l'essentiel : 
+                <span class="home-text-bold">Vitesse, Sécurité, Stabilité.</span>
+            </p>
+
+            <div class="home-buttons reveal delay-200">
+                <a href="collaborons.html" class="btn btn-primary">Parlez-nous de votre vision</a>
+                <a href="realisations.html" class="btn btn-outline">Voir nos réalisations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- // footer -->
+    <footer class="font-mono">
+        <p>&copy; 2026 AZER TY SAS. All systems operational.</p>
+    </footer>
+
+    <!-- // scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="Animations/loader.js"></script>
+    <script src="Animations/particules.js"></script>
+    <script src="Animations/scroll.js"></script>
+    <script src="Animations/tilt.js"></script>
+</body>
+</html>

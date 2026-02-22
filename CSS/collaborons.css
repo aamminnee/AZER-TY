@@ -1,0 +1,32 @@
+/* // collaborons specific styles */
+.collaborons-text {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-gradient-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, var(--green), var(--blue));
+}
+
+.form-submit-btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.form-guarantee {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    color: #a0aec0;
+}

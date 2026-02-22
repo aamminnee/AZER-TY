@@ -1,0 +1,109 @@
+/* // slant variables */
+:root {
+    --slant: 5vw;
+}
+
+/* // main wrapper without solid background to let particles show */
+.realisations-wrapper {
+    padding-top: var(--nav-height);
+    position: relative;
+    z-index: 10;
+    overflow: hidden; 
+}
+
+/* // base for each zigzag section */
+.zigzag-section {
+    padding: calc(4rem + var(--slant)) 0;
+    position: relative;
+}
+
+/* // azer ty glassmorphism style 1 */
+.bg-glass-1 {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* // azer ty glassmorphism style 2 (light brand blue) */
+.bg-glass-2 {
+    background: rgba(0, 160, 210, 0.05);
+    backdrop-filter: blur(8px);
+}
+
+/* // cutting math to join blocks without spaces */
+
+/* // block 1 : flat top, bottom right slanted down */
+.slant-1 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--slant)));
+    padding-top: 6rem;
+}
+
+/* // block 2 : nests in block 1, bottom left slanted up */
+.slant-2 {
+    margin-top: calc(-1 * var(--slant));
+    clip-path: polygon(0 0, 100% var(--slant), 100% calc(100% - var(--slant)), 0 100%);
+}
+
+/* // block 3 : nests in block 2, bottom right slanted down */
+.slant-3 {
+    margin-top: calc(-1 * var(--slant));
+    clip-path: polygon(0 var(--slant), 100% 0, 100% 100%, 0 calc(100% - var(--slant)));
+}
+
+/* // block 4 : nests in block 3, flat bottom */
+.slant-4 {
+    margin-top: calc(-1 * var(--slant));
+    clip-path: polygon(0 0, 100% var(--slant), 100% 100%, 0 100%);
+    padding-bottom: 6rem;
+}
+
+/* // layout grid for text and rectangles */
+.project-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.project-text {
+    text-align: left;
+}
+
+/* // azer ty style dashed card for image placeholders */
+.project-card {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: var(--card);
+    border: 2px dashed var(--border);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: var(--blue);
+}
+
+/* // mobile adaptation */
+@media (max-width: 768px) {
+    .project-row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .project-reverse-mobile .project-text {
+        order: 2;
+    }
+    
+    .project-reverse-mobile .project-card {
+        order: 1;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- // meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZER TY - A propos</title>
+    
+    <!-- // google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- // font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- // custom css -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/about.css">
+</head>
+<body>
+    <!-- // loader -->
+    <div id="loader">
+        <div class="text-center">
+            <span class="font-mono" style="font-size: 1.5rem; font-weight: bold; color: var(--heading); letter-spacing: 2px;">&lt;AZER TY/&gt;</span>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+    
+    <!-- // background elements -->
+    <div id="particles-js"></div>
+    <div class="bg-grid"></div>
+
+    <!-- // navigation header -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="home.html" class="nav-logo"><img src="Images/logo.png" alt="AZER TY Logo"></a>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Accueil</a>
+                <a href="about.html" class="nav-link active">A propos</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="collaborons.html" class="btn btn-primary btn-small">Collaborons</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- // main about section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            
+            <!-- // main company title -->
+            <h1 class="title-large reveal about-title">AZER TY</h1>
+            
+            <!-- // company presentation text -->
+            <p class="reveal delay-100 about-text">
+                AZER-TY est une entreprise vendant des solutions informatiques en B2B et B2C. 
+                Une fusion entre les initiales de nos fondateurs (Amine, Zhabrail, Ethan, Rayan) 
+                et la Technology, créée dans le cadre de notre projet universitaire à l'IUT de Marne-la-Vallée.
+            </p>
+
+            <!-- // team section title -->
+            <h2 class="title-medium reveal delay-200 team-title">NOTRE EQUIPE</h2>
+
+            <!-- // team cards wrapper -->
+            <div class="reveal delay-200 team-container">
+                <div class="team-grid">
+                    
+                    <!-- // developer 1 -->
+                    <div class="card tilt-card team-card-inner">
+                        <div class="pdp-wrapper">
+                            <img src="Images/PHOTO_CV.JPEG" alt="Photo Amine" class="pdp-image">
+                        </div>
+                        <h3 class="title-small dev-name">Amine</h3>
+                        <p class="dev-role">presentation dev</p>
+                        <a href="#" class="btn btn-outline btn-small btn-portfolio">portfolio</a>
+                    </div>
+                    
+                    <!-- // developer 2 -->
+                    <div class="card tilt-card team-card-inner">
+                        <div class="pdp-wrapper">
+                            <!-- // replace src with actual image path -->
+                            <img src="Images/photo_zhabrail.jpeg" alt="Photo Zhabrail" class="pdp-image" onerror="this.src='Images/logo.png'">
+                        </div>
+                        <h3 class="title-small dev-name">Zhabrail</h3>
+                        <p class="dev-role">presentation dev</p>
+                        <a href="#" class="btn btn-outline btn-small btn-portfolio">portfolio</a>
+                    </div>
+                    
+                    <!-- // developer 3 -->
+                    <div class="card tilt-card team-card-inner">
+                        <div class="pdp-wrapper">
+                            <!-- // replace src with actual image path -->
+                            <img src="Images/photo_ethan.jpeg" alt="Photo Ethan" class="pdp-image" onerror="this.src='Images/logo.png'">
+                        </div>
+                        <h3 class="title-small dev-name">Ethan</h3>
+                        <p class="dev-role">presentation dev</p>
+                        <a href="#" class="btn btn-outline btn-small btn-portfolio">portfolio</a>
+                    </div>
+                    
+                    <!-- // developer 4 -->
+                    <div class="card tilt-card team-card-inner">
+                        <div class="pdp-wrapper">
+                            <!-- // replace src with actual image path -->
+                            <img src="Images/photo_rayan.jpeg" alt="Photo Rayan" class="pdp-image" onerror="this.src='Images/logo.png'">
+                        </div>
+                        <h3 class="title-small dev-name">Rayan</h3>
+                        <p class="dev-role">presentation dev</p>
+                        <a href="#" class="btn btn-outline btn-small btn-portfolio">portfolio</a>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- // footer -->
+    <footer class="font-mono">
+        <p>&copy; 2026 AZER TY SAS. All systems operational.</p>
+    </footer>
+
+    <!-- // javascript external files -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="Animations/loader.js"></script>
+    <script src="Animations/particules.js"></script>
+    <script src="Animations/scroll.js"></script>
+    <script src="Animations/tilt.js"></script>
+</body>
+</html>

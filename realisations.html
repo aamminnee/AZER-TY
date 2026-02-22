@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- // meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZER TY - Réalisations</title>
+    
+    <!-- // google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- // font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- // custom css files -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/realisations.css">
+</head>
+<body>
+    <!-- // page loader -->
+    <div id="loader">
+        <div class="text-center">
+            <span class="font-mono" style="font-size: 1.5rem; font-weight: bold; color: var(--heading); letter-spacing: 2px;">&lt;AZER TY/&gt;</span>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+    
+    <!-- // backgrounds (particles and grid will show through the glassmorphism) -->
+    <div id="particles-js"></div>
+    <div class="bg-grid"></div>
+
+    <!-- // navigation menu -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="home.html" class="nav-logo"><img src="Images/logo.png" alt="AZER TY Logo"></a>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Accueil</a>
+                <a href="about.html" class="nav-link">A propos</a>
+                <a href="realisations.html" class="nav-link active">Réalisations</a>
+                <a href="collaborons.html" class="btn btn-primary btn-small">Collaborons</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- // main container with zigzag structure -->
+    <div class="realisations-wrapper">
+        
+        <!-- // section 1 : main title (glassmorphism style 1) -->
+        <div class="zigzag-section bg-glass-1 slant-1 reveal">
+            <div class="container text-center">
+                <div class="tag font-mono"><span class="pulse-dot"></span>Portfolio</div>
+                <h1 class="title-large" style="margin-bottom: 0;">Nos <span class="text-gradient">Réalisations</span></h1>
+            </div>
+        </div>
+
+        <!-- // section 2 : first project (glassmorphism style 2) -->
+        <div class="zigzag-section bg-glass-2 slant-2 reveal delay-100">
+            <div class="project-row">
+                <!-- // text on the left -->
+                <div class="project-text">
+                    <h2 class="title-medium">Résumé projet</h2>
+                    <p style="margin-bottom: 1.5rem;">Déploiement complet d'une architecture haute performance en B2B. Focus absolu sur la vitesse, la sécurité des transactions et la stabilité de l'infrastructure backend.</p>
+                    <a href="#" class="btn btn-outline btn-small">Voir le projet</a>
+                </div>
+                <!-- // dashed card placeholder on the right -->
+                <div class="project-card tilt-card">
+                    <i class="fas fa-server" style="font-size: 3rem; color: var(--border); margin-bottom: 1rem;"></i>
+                    <span class="font-mono" style="color: var(--text); font-size: 0.875rem;">// image_projet_1.png</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- // section 3 : intermediate text (glassmorphism style 1) -->
+        <div class="zigzag-section bg-glass-1 slant-3 reveal delay-100">
+            <div class="project-row">
+                <!-- // text aligned to the left according to the mockup -->
+                <div class="project-text">
+                    <h2 class="title-medium">L'Excellence Technique</h2>
+                    <p>Transition fluide expliquant notre méthodologie. Chaque ligne de code est pensée pour résoudre une problématique complexe tout en gardant une conception élégante et maintenable sur le long terme.</p>
+                </div>
+                <!-- // empty right column to respect your layout -->
+                <div></div>
+            </div>
+        </div>
+
+        <!-- // section 4 : second project (glassmorphism style 2) -->
+        <div class="zigzag-section bg-glass-2 slant-4 reveal delay-100">
+            <!-- // reversed order to put image on the left and text on the right -->
+            <div class="project-row project-reverse-mobile">
+                <!-- // dashed card placeholder on the left -->
+                <div class="project-card tilt-card">
+                    <i class="fas fa-mobile-screen" style="font-size: 3rem; color: var(--border); margin-bottom: 1rem;"></i>
+                    <span class="font-mono" style="color: var(--text); font-size: 0.875rem;">// image_projet_2.png</span>
+                </div>
+                <!-- // text on the right -->
+                <div class="project-text">
+                    <h2 class="title-medium">Résumé projet</h2>
+                    <p style="margin-bottom: 1.5rem;">Création d'une plateforme métier évolutive. Gestion des données en temps réel, interfaces épurées et interfaçage avec des API externes exigeantes.</p>
+                    <a href="#" class="btn btn-outline btn-small">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- // footer -->
+    <footer class="font-mono"><p>&copy; 2026 AZER TY SAS. All systems operational.</p></footer>
+
+    <!-- // javascript animation scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="Animations/loader.js"></script>
+    <script src="Animations/particules.js"></script>
+    <script src="Animations/scroll.js"></script>
+    <script src="Animations/tilt.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* // home specific styles */
+.home-section {
+    text-align: center;
+}
+
+.home-text {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.125rem;
+}
+
+.home-text-bold {
+    color: var(--heading);
+    font-weight: 600;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
