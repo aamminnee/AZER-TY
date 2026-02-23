@@ -4,7 +4,7 @@
     <!-- // meta tags and title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AZER TY - Réalisations</title>
+    <title>AZER TY - Mentions Légales</title>
     
     <!-- // google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -12,12 +12,12 @@
     <!-- // font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- // custom css files -->
+    <!-- // custom css -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/realisations.css">
+    <link rel="stylesheet" href="CSS/mentions.css">
 </head>
 <body>
-    <!-- // page loader -->
+    <!-- // loader -->
     <div id="loader">
         <div class="text-center">
             <span class="font-mono" style="font-size: 1.5rem; font-weight: bold; color: var(--heading); letter-spacing: 2px;">&lt;AZER TY/&gt;</span>
@@ -25,11 +25,11 @@
         </div>
     </div>
     
-    <!-- // backgrounds (particles and grid will show through the glassmorphism) -->
+    <!-- // backgrounds -->
     <div id="particles-js"></div>
     <div class="bg-grid"></div>
 
- <!-- // main navigation header -->
+    <!-- // main navigation header -->
     <nav class="navbar">
         <div class="container">
             <!-- // logo section -->
@@ -49,70 +49,63 @@
         </div>
     </nav>
 
-    <div class="realisations-wrapper">
-        
-        <!-- // section 1 : main title (glassmorphism style 1) -->
-        <div class="zigzag-section bg-glass-1 slant-1 reveal">
-            <div class="container text-center">
-                <div class="tag font-mono"><span class="pulse-dot"></span>Portfolio</div>
-                <h1 class="title-large" style="margin-bottom: 0;">Nos <span class="text-gradient">Réalisations</span></h1>
-            </div>
-        </div>
+    <!-- // main content -->
+    <main class="legal-page-wrapper">
+        <section class="legal-section reveal">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 3rem;">
+                    <div class="tag font-mono">CONFORMITÉ</div>
+                    <h1 class="title-medium">Mentions <span class="text-gradient">Légales</span></h1>
+                </div>
 
-        <!-- // section 2 : first project (glassmorphism style 2) -->
-        <div class="zigzag-section bg-glass-2 slant-2 reveal delay-100">
-            <div class="project-row">
-                <div class="project-text">
-                    <h2 class="title-medium">Résumé projet</h2>
-                    <p class="text-white" style="margin-bottom: 1.5rem; opacity: 0.9;">
-                        MyBrixStore est une plateforme E-commerce innovante dédiée à la création de mosaïques en briques. 
-                        Développée sous une architecture MVC personnalisée, elle intègre des algorithmes de traitement d'images, 
-                        une gestion dynamique des stocks en temps réel et un tunnel d'achat sécurisé, offrant une expérience 
-                        utilisateur fluide et une interface d'administration complète pour le pilotage commercial.
-                    </p>
-                    <a href="#" class="btn btn-outline btn-small">Voir le projet</a>
-                </div>
-                <div class="project-card tilt-card">
-                    <img src="Images/mybrickstore.png">
-                </div>
-            </div>
-        </div>
+                <div class="card legal-card">
+                    <div class="form-gradient-bar"></div>
+                    
+                    <div class="legal-block">
+                        <h2 class="title-small">Editeur du site</h2>
+                        <p><strong>AZER TY SAS</strong></p>
+                        <p>Société par actions simplifiée au capital de 10 000 €</p>
+                        <p>RCS Meaux : 123 456 789</p>
+                        <p>Siret : 12345678900010</p>
+                        <p>Code NAF : 6201Z (Programmation informatique)</p>
+                        <p>Siège social : 2 Rue Albert Einstein, 77420 Champs-sur-Marne, France</p>
+                    </div>
 
-        <div class="zigzag-section bg-glass-1 slant-3 reveal delay-100">
-            <div class="section-grid-overlay"></div>
-            
-            <div class="project-row">
-                <div class="project-text">
-                    <h2 class="title-medium">L'Excellence Technique</h2>
-                    <p style="color: var(--text);">Notre expertise ne s'arrête pas au web. Pour répondre aux nouveaux défis, nous concevons des architectures logicielles complètes. En intégrant des technologies modernes telles que NodeJS, React, TypeScript et des bases de données NoSQL (MongoDB), nous bâtissons des écosystèmes robustes capables de supporter des applications mobiles complexes et des échanges de données en temps réel.</p>
-                </div>
-                <div></div>
-            </div>
-        </div>
+                    <div class="legal-block">
+                        <h2 class="title-small">Directeurs de publication</h2>
+                        <p>Amine A., Zhabrail A., Ethan P., et Rayan E., en qualité de co-fondateurs associés.</p>
+                    </div>
 
-        <div class="zigzag-section bg-glass-2 slant-4 reveal delay-100">
-            <div class="project-row project-reverse-mobile">
-                <div class="project-card tilt-card">
-                    <img src="Images/mybrickgames.png">
-                </div>
-                <div class="project-text">
-                    <h2 class="title-medium">Résumé projet</h2>
-                    <p style="margin-bottom: 1.5rem;">Prolongement ambitieux de notre plateforme, <strong>MyBrixGames</strong> est une application mobile Android permettant à plusieurs utilisateurs de jouer ensemble en temps réel (Tetris-like coloré et pavage Lego). Elle repose sur une architecture de pointe combinant un serveur de jeu robuste sous NodeJS / React et une gestion des données ultra-rapide via une base NoSQL (MongoDB).</p>
-                    <a href="#" class="btn btn-outline btn-small">Voir le projet</a>
+                    <div class="legal-block">
+                        <h2 class="title-small">Hébergement</h2>
+                        <p><strong>Google Cloud</strong></p>
+                        <p>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande.</p>
+                    </div>
+
+                    <div class="legal-block">
+                        <h2 class="title-small">Propriété Intellectuelle</h2>
+                        <p>L'ensemble de ce site est régi par la législation française sur le droit d'auteur et la propriété intellectuelle. Le contenu du site, incluant, de façon non limitative, les images, graphismes, textes, vidéos, logos, et icônes sont la propriété exclusive de la société <strong>AZER TY SAS</strong> à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.</p>
+                        <p>La reproduction, la représentation, le transfert, la distribution, ou l'enregistrement de tout ou partie de ces éléments est formellement interdite sans l'autorisation expresse de la société AZER TY.</p>
+                    </div>
+
+                    <div class="legal-block">
+                        <h2 class="title-small">Crédits</h2>
+                        <p>Ce site a été réalisé en interne par l'équipe <strong>AZER TY</strong>.</p>
+                        <p>Technologies utilisées : HTML5, CSS3 (Custom Design), JavaScript (Vanilla JS), Particles.js.</p>
+                        <p>Design : Direction artistique AZER TY.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-    </div>
-
-    <!-- // large modern footer -->
+    <!-- // footer -->
     <footer class="site-footer">
         <div class="footer-decor">
             <span class="footer-huge-logo font-mono">&lt;A/&gt;</span>
         </div>
         <div class="footer-container">
             <div class="footer-grid">
-                <!-- // brand and contact col -->
                 <div class="footer-brand">
                     <div class="footer-logo font-mono">&lt;AZER TY/&gt;</div>
                     <div class="footer-contact">
@@ -127,27 +120,19 @@
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-addresses">
                     <h3 class="footer-heading">Nos Adresses</h3>
-                    
                     <div class="footer-address-block">
                         <h4>Marne-la-Vallée (HQ)</h4>
                         <p>IUT de Marne-la-Vallée<br>2 Rue Albert Einstein<br>77420 Champs-sur-Marne</p>
                     </div>
-
                     <div class="footer-address-block">
                         <h4>Paris</h4>
                         <p>10 Allée Lydia Becker<br>75018 Paris - FRANCE</p>
                     </div>
-
-                    <div class="footer-address-block">
-                        <h4>Lyon</h4>
-                        <p>Immeuble LE PRESIDENT<br>40/42 Av. Georges Pompidou<br>69003 Lyon - FRANCE</p>
-                    </div>
                 </div>
 
-                <!-- // links col -->
                 <div class="footer-nav">
                     <h3 class="footer-heading">Nous Découvrir</h3>
                     <ul class="footer-links">
@@ -157,19 +142,17 @@
                         <li><a href="technologies.html">Technologies</a></li>
                         <li><a href="recrutement.html">Recrutement</a></li>
                         <li><a href="collaborons.html">Collaborons</a></li>
-                        <li><a href="mentions.html">Mentions légales</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
                     </ul>
                 </div>
             </div>
-
-            <!-- // copyright -->
             <div class="footer-bottom font-mono">
                 <p>&copy; 2026 AZER TY SAS. All systems operational.</p>
             </div>
         </div>
     </footer>
 
-    <!-- // javascript animation scripts -->
+    <!-- // scripts -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="Animations/loader.js"></script>

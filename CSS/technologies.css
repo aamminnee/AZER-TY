@@ -1,0 +1,118 @@
+/* // main page wrapper padding */
+.technologie-page-wrapper {
+    padding-top: calc(var(--nav-height) + 60px);
+    min-height: 100vh;
+}
+
+/* // header section styling */
+.tech-header-section {
+    padding: 40px 0;
+    min-height: auto;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: var(--text);
+    background: transparent;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.tech-main-title {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+/* // underline decoration under the title */
+.title-underline {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, var(--green), var(--blue));
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* // grid section configuration */
+.tech-grid-section {
+    padding: 20px 0 100px 0;
+    min-height: auto;
+}
+
+/* // responsive grid layout for square cards */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+/* // individual technology card styling */
+.tech-card {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+/* // icons sizing inside the cards */
+.tech-card i[class^="devicon-"] {
+    font-size: 5rem;
+    transition: transform 0.3s ease;
+}
+
+/* // custom logo wrapper for text-based logos */
+.custom-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* // hover effects for the cards */
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    border-color: rgba(0, 160, 210, 0.3);
+}
+
+.tech-card:hover i[class^="devicon-"],
+.tech-card:hover .custom-logo {
+    transform: scale(1.1);
+}
+
+/* // mobile responsiveness */
+@media (max-width: 768px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .tech-card i[class^="devicon-"] {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .tech-card i[class^="devicon-"] {
+        font-size: 3.5rem;
+    }
+}

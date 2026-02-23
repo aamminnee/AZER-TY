@@ -1,9 +1,9 @@
-/* // slant variables */
+/* // variables d'inclinaison */
 :root {
     --slant: 5vw;
 }
 
-/* // main wrapper without solid background to let particles show */
+/* // conteneur principal sans fond solide */
 .realisations-wrapper {
     padding-top: var(--nav-height);
     position: relative;
@@ -11,55 +11,93 @@
     overflow: hidden; 
 }
 
-/* // base for each zigzag section */
+/* // base pour chaque section en zigzag */
 .zigzag-section {
     padding: calc(4rem + var(--slant)) 0;
     position: relative;
 }
 
-/* // azer ty glassmorphism style 1 */
+/* // style fond blanc pur pour titre et transition */
 .bg-glass-1 {
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(12px);
-    border-top: 1px solid rgba(255, 255, 255, 0.6);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    background: #ffffff;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
-/* // azer ty glassmorphism style 2 (light brand blue) */
+/* // style degrade de marque pour les sections projets */
 .bg-glass-2 {
-    background: rgba(0, 160, 210, 0.05);
-    backdrop-filter: blur(8px);
+    background: linear-gradient(135deg, var(--green), var(--blue), var(--yellow));
+    background-size: 200% 200%;
+    animation: gradientFlow 10s ease infinite;
 }
 
-/* // cutting math to join blocks without spaces */
+/* // utilitaires de texte blanc pour les sections degradees */
+.text-white {
+    color: #ffffff !important;
+}
 
-/* // block 1 : flat top, bottom right slanted down */
+/* // utilitaire pour forcer l'empilement au-dessus de la grille */
+.relative-z {
+    position: relative;
+    z-index: 1;
+}
+
+/* // bouton specifique pour fond fonce/degrade */
+.btn-outline-white {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-white:hover {
+    background: white;
+    color: var(--blue);
+}
+
+/* // superposition de grille locale technique */
+.section-grid-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.4;
+    background-image: linear-gradient(to right, var(--border) 1px, transparent 1px),
+                      linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+/* // decoupes polygonales dynamiques */
 .slant-1 {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--slant)));
     padding-top: 6rem;
 }
 
-/* // block 2 : nests in block 1, bottom left slanted up */
 .slant-2 {
     margin-top: calc(-1 * var(--slant));
     clip-path: polygon(0 0, 100% var(--slant), 100% calc(100% - var(--slant)), 0 100%);
 }
 
-/* // block 3 : nests in block 2, bottom right slanted down */
 .slant-3 {
     margin-top: calc(-1 * var(--slant));
     clip-path: polygon(0 var(--slant), 100% 0, 100% 100%, 0 calc(100% - var(--slant)));
 }
 
-/* // block 4 : nests in block 3, flat bottom */
 .slant-4 {
     margin-top: calc(-1 * var(--slant));
     clip-path: polygon(0 0, 100% var(--slant), 100% 100%, 0 100%);
     padding-bottom: 6rem;
 }
 
-/* // layout grid for text and rectangles */
+/* // disposition et alignement des projets */
 .project-row {
+    position: relative;
+    z-index: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -71,34 +109,55 @@
 
 .project-text {
     text-align: left;
+    color: #ffffff;
 }
 
-/* // azer ty style dashed card for image placeholders */
+/* // carte projet avec taille fixe et cadre soigne */
 .project-card {
     width: 100%;
-    aspect-ratio: 4/3;
-    background: var(--card);
-    border: 2px dashed var(--border);
-    border-radius: 1rem;
+    max-width: 500px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
 }
 
 .project-card:hover {
-    border-color: var(--blue);
+    transform: translateY(-5px);
+    border-color: white;
 }
 
-/* // mobile adaptation */
+/* // ajustements pour la reactivite mobile */
 @media (max-width: 768px) {
     .project-row {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
+    .project-card {
+        height: 250px;
+        margin: 0 auto;
+    }
+
     .project-reverse-mobile .project-text {
         order: 2;
     }
