@@ -42,75 +42,148 @@
         </div>
     </nav>
 
-    <!-- // main about section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            
-            <!-- // main company title -->
-            <h1 class="title-large reveal about-title">AZER TY</h1>
-            
-            <!-- // company presentation text -->
-            <p class="reveal delay-100 about-text">
-                AZER-TY est une entreprise vendant des solutions informatiques en B2B et B2C. 
-                Une fusion entre les initiales de nos fondateurs (Amine, Zhabrail, Ethan, Rayan) 
-                et la Technology, créée dans le cadre de notre projet universitaire à l'IUT de Marne-la-Vallée.
-            </p>
+    <!-- // main content wrapper -->
+    <main class="about-page-wrapper">
 
-            <!-- // team section title -->
-            <h2 class="title-medium reveal delay-200 team-title">NOTRE EQUIPE</h2>
-
-            <!-- // team cards wrapper -->
-            <div class="reveal delay-200 team-container">
-                <div class="team-grid">
-                    
-                    <!-- // developer 1 -->
-                    <div class="card tilt-card team-card-inner">
-                        <div class="pdp-wrapper">
-                            <img src="Images/PHOTO_CV.JPEG" alt="Photo Amine" class="pdp-image">
+        <!-- // section 1 : origin (image left, text right) -->
+        <section class="about-block reveal">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-col">
+                        <div class="img-decor-wrapper tilt-card">
+                            <div class="img-decor-bg-blue"></div>
+                            <!-- // using a generic tech image placeholder -->
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="L'équipe au travail" class="about-img">
                         </div>
-                        <h3 class="title-small dev-name">Amine</h3>
-                        <p class="dev-role">presentation dev</p>
-                        <a href="#" class="btn btn-outline btn-small btn-portfolio">portfolio</a>
                     </div>
-                    
-                    <!-- // developer 2 -->
-                    <div class="card tilt-card team-card-inner">
-                        <div class="pdp-wrapper">
-                            <!-- // replace src with actual image path -->
-                            <img src="Images/photo_zhabrail.jpeg" alt="Photo Zhabrail" class="pdp-image" onerror="this.src='Images/logo.png'">
-                        </div>
-                        <h3 class="title-small dev-name">Zhabrail</h3>
-                        <p class="dev-role">presentation dev</p>
-                        <a href="#" class="btn btn-outline btn-small btn-portfolio">portfolio</a>
+                    <div class="about-text-col">
+                        <h2 class="title-medium text-gradient">L'origine d'AZER TY</h2>
+                        <p>Depuis l'origine, nous sommes animés par l'innovation, la modernisation et l'optimisation des architectures web. Née d'une fusion entre les initiales de nos fondateurs (Amine, Zhabrail, Ethan, Rayan) et la Technology lors de notre cursus à l'IUT de Marne-la-Vallée, notre agence a redéfini les standards.</p>
+                        <p>Nous combinons conseil, méthodologie agile et qualité d'exécution pour offrir des solutions digitales concrètes, sans aucun compromis sur la performance.</p>
                     </div>
-                    
-                    <!-- // developer 3 -->
-                    <div class="card tilt-card team-card-inner">
-                        <div class="pdp-wrapper">
-                            <!-- // replace src with actual image path -->
-                            <img src="Images/photo_ethan.jpeg" alt="Photo Ethan" class="pdp-image" onerror="this.src='Images/logo.png'">
-                        </div>
-                        <h3 class="title-small dev-name">Ethan</h3>
-                        <p class="dev-role">presentation dev</p>
-                        <a href="#" class="btn btn-outline btn-small btn-portfolio">portfolio</a>
-                    </div>
-                    
-                    <!-- // developer 4 -->
-                    <div class="card tilt-card team-card-inner">
-                        <div class="pdp-wrapper">
-                            <!-- // replace src with actual image path -->
-                            <img src="Images/photo_rayan.jpeg" alt="Photo Rayan" class="pdp-image" onerror="this.src='Images/logo.png'">
-                        </div>
-                        <h3 class="title-small dev-name">Rayan</h3>
-                        <p class="dev-role">presentation dev</p>
-                        <a href="#" class="btn btn-outline btn-small btn-portfolio">portfolio</a>
-                    </div>
-
                 </div>
             </div>
-            
-        </div>
-    </section>
+        </section>
+
+        <!-- // section 2 : chef (image left, text right) -->
+        <section class="about-block reveal delay-100">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="leader-image-col">
+                        <div class="leader-img-wrapper tilt-card">
+                            <div class="leader-bg-blue"></div>
+                            <img src="Images/Amine.png" alt="Amine" class="leader-img" onerror="this.src='Images/logo.png'">
+                        </div>
+                    </div>
+                    <div class="about-text-col">
+                        <h2 class="title-medium" style="margin-bottom: 0.5rem;">Amine</h2>
+                        <h3 class="title-small" style="color: var(--blue); margin-bottom: 1.5rem;">CEO et cofondateur</h3>
+                        <p>Passionné par l'innovation technologique depuis le début de sa carrière. Sa trajectoire professionnelle a été marquée par la création de solutions digitales à fort impact.</p>
+                        <p>Fort de son expertise technique et de sa vision stratégique, Amine incarne l'engagement d'AZER TY pour l'excellence dans la transformation digitale des entreprises.</p>
+                        <!-- // added linkedin link for amine -->
+                        <a href="https://www.linkedin.com/in/amine-aissyne-37b1ab307/" target="_blank" class="leader-social"><i class="fab fa-linkedin"></i> Profil LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- // section 3 : co-chef (text left, image right) -->
+        <section class="about-block reveal delay-100">
+            <div class="container">
+                <div class="about-grid reverse-mobile">
+                    <div class="about-text-col">
+                        <h2 class="title-medium" style="margin-bottom: 0.5rem;">Zhabrail</h2>
+                        <h3 class="title-small" style="color: var(--green); margin-bottom: 1.5rem;">CTO et cofondateur</h3>
+                        <p>Zhabrail a entamé son parcours en se concentrant sur les architectures robustes. Il a contribué à la mise en place de systèmes sécurisés et de solutions backend performantes.</p>
+                        <p>Passionné de connaissances et d'une curiosité insatiable, il partage son expertise pour garantir un code propre et maintenable sur le long terme.</p>
+                        <!-- // added linkedin link for zhabrail -->
+                        <a href="https://www.linkedin.com/in/zhabrail-alkhastov/" target="_blank" class="leader-social"><i class="fab fa-linkedin"></i> Profil LinkedIn</a>
+                    </div>
+                    <div class="leader-image-col">
+                        <div class="leader-img-wrapper tilt-card">
+                            <div class="leader-bg-green"></div>
+                            <img src="Images/Zhabrail.png" alt="Zhabrail" class="leader-img" onerror="this.src='Images/logo.png'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- // section 4 : team grid (circular portraits) -->
+        <section class="about-team-section reveal delay-200">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 4rem;">
+                    <h2 class="title-medium">Notre équipe</h2>
+                </div>
+
+                <div class="team-circle-grid">
+                    <!-- // team member 1 -->
+                    <div class="team-member-circle">
+                        <div class="circle-img-wrap tilt-card">
+                            <img src="Images/Ethan.png" alt="Ethan" onerror="this.src='Images/logo.png'">
+                        </div>
+                        <h3 class="title-small">Ethan</h3>
+                        <p class="font-mono team-role">Développeur</p>
+                        <a href="https://www.linkedin.com/in/ethan-polin/" class="team-social"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                    <!-- // team member 2 -->
+                    <div class="team-member-circle">
+                        <div class="circle-img-wrap tilt-card">
+                            <img src="Images/Rayan.png" alt="Rayan" onerror="this.src='Images/logo.png'">
+                        </div>
+                        <h3 class="title-small">Rayan</h3>
+                        <p class="font-mono team-role">Développeur</p>
+                        <a href="https://www.linkedin.com/in/rayan-essaidi/" class="team-social"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- // section 5 : commitment (full width blue background) -->
+        <section class="about-commitment reveal">
+            <!-- // floating decorative dots for the background -->
+            <div class="commitment-decor dot-1"></div>
+            <div class="commitment-decor dot-2"></div>
+            <div class="commitment-decor line-1"></div>
+            <div class="container relative-z">
+                <div class="about-grid commitment-grid-align">
+                    
+                    <!-- // left column text -->
+                    <div class="about-text-col">
+                        <h2 class="title-medium text-white">Notre engagement pour le bien-être et l'excellence</h2>
+                        <p class="text-white-muted">Notre équipe dépasse les frontières pour travailler avec les meilleurs talents à travers le monde, ce qui nous permet de bénéficier d'une diversité d'idées et d'approches.</p>
+                        <p class="text-white-muted">Le bien-être de nos collaborateurs est une priorité essentielle pour nous. Nous croyons sincèrement en l'importance d'offrir un équilibre entre vie professionnelle et personnelle à nos experts.</p>
+                        <p class="text-white-muted">L'équipe et les projets sont en constante évolution, et nous sommes toujours ravis de rencontrer de nouveaux talents qui partagent notre vision.</p>
+                    </div>
+                    
+                    <!-- // right column text and image -->
+                    <div class="about-image-col">
+                        <p class="text-white" style="margin-bottom: 2rem;">Aujourd'hui, le squad compte 16 talents et collaborateurs. Au-delà de l'envie de co-créer des solutions innovantes et performantes, l'équipe est unie par des valeurs et des engagements sociétaux et environnementaux.</p>
+                        <div class="tilt-card" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.2);">
+                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80" alt="Réunion d'équipe" class="commitment-img">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- // section 6 : cta block -->
+        <section class="about-cta reveal">
+            <div class="container text-center">
+                <div class="cta-banner">
+                    <h2 class="title-medium text-white">Envie de nous rejoindre ?</h2>
+                    <p class="text-white cta-text">Viens partager une aventure pleine de sens, dans un cadre bienveillant !</p>
+                    <div class="cta-buttons">
+                        <a href="collaborons.html" class="btn btn-outline-white">Envoyer une candidature spontanée</a>
+                        <a href="#" class="btn btn-primary-dark">Découvrir nos offres d'emploi</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- // footer -->
     <footer class="font-mono">
