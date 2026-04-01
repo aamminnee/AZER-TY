@@ -237,6 +237,12 @@ nav {
   .header-inner { gap: 1rem; }
 }
 
+@media (max-width: 1100px) {
+  nav, .nav-cta { display: none; }
+  .burger { display: flex; }
+  .header-inner { gap: 1rem; }
+}
+
 .page-top {
   height: 100vh;
   display: flex;
